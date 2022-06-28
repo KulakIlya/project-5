@@ -1,0 +1,134 @@
+:root {
+  --main-font-family: "Nunito";
+  --main-font-weight: 400;
+
+  --primary-button-color: #f4e041;
+
+  --main-background-color: #f8f8f8;
+  --secondary-font-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+}
+
+.section {
+  padding-bottom: 140px;
+  background-color: var(--main-background-color);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1210px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn {
+  padding: 4px 29px;
+
+  font-size: 16px;
+  line-height: 1.62;
+
+  background-color: var(--primary-button-color);
+  border: transparent;
+  border-radius: 80px;
+}
+
+/* Header */
+
+.header .container {
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons .btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Hero */
+
+.hero .container {
+  padding-top: 163px;
+  padding-bottom: 163px;
+  text-align: center;
+
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: var(--secondary-font-color);
+}
+
+.hero .title {
+  margin: 0 auto;
+
+  width: 380px;
+
+  font-size: 40px;
+  line-height: 1;
+}
+
+.hero .description {
+  margin: auto;
+  margin-top: 21px;
+
+  width: 380px;
+
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.hero .btn {
+  margin: auto;
+  margin-top: 32px;
+}
+
+/* Contacts */
+
+.contacts .title {
+  margin: 0;
+  text-align: center;
+}
+
+.contacts-list {
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.contacts-list .item {
+  padding: 20px;
+
+  background-color: var(--secondary-font-color);
+}
+
+.contacts-list img {
+  margin: 0 auto;
+
+  display: block;
+}
+
+.contacts-list .item-title {
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.62;
+}
