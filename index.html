@@ -22,9 +22,10 @@
   <body>
     <header class="header">
       <div class="container">
-        <svg width="104" height="26" class="logo">
-          <use xlink:href="./images/sprite.svg#logo"></use>
-        </svg>
+        <a href="#"
+          ><svg width="104" height="26" class="logo" aria-label="logo">
+            <use xlink:href="./images/sprite.svg#logo"></use></svg
+        ></a>
         <div class="buttons">
           <button class="btn" type="button">Users</button>
           <button class="btn" type="button">Sign up</button>
@@ -71,8 +72,8 @@
             />
             <h3 class="item-title">Takamaru Ayako Jurrien</h3>
             <p class="description">Lead Independent Director</p>
-            <a href="mailto:">Takamuru@gmail.com</a>
-            <a href="telto:">+38 (098) 278 90 24</a>
+            <a class="link" href="mailto:">Takamuru@gmail.com</a> <br />
+            <a class="link" href="telto:">+38 (098) 278 90 24</a>
           </li>
           <li class="item">
             <img
@@ -82,8 +83,8 @@
             />
             <h3 class="item-title">Ilya</h3>
             <p class="description">Co-Founder and CEO</p>
-            <a href="mailto:">Ilya_founder@gmail.com</a>
-            <a href="telto:">+38 (098) 235 44 24</a>
+            <a class="link" href="mailto:">Ilya_founder@gmail.com</a> <br />
+            <a class="link" href="telto:">+38 (098) 235 44 24</a>
           </li>
           <li class="item">
             <img
@@ -93,8 +94,8 @@
             />
             <h3 class="item-title">Alexandre</h3>
             <p class="description">Lead Independent Director</p>
-            <a href="mailto:">Alexandr_develop@gmail.com</a>
-            <a href="telto:">+38 (098) 198 44 24</a>
+            <a class="link" href="mailto:">Alexandr_develop@gmail.com</a>
+            <a class="link" href="telto:">+38 (098) 198 44 24</a>
           </li>
           <li class="item">
             <img
@@ -104,8 +105,8 @@
             />
             <h3 class="item-title">Winny</h3>
             <p class="description">Former Senior Director</p>
-            <a href="mailto:">Winny_develop@gmail.com</a>
-            <a href="telto:">+38 (098) 278 22 88</a>
+            <a class="link" href="mailto:">Winny_develop@gmail.com</a>
+            <a class="link" href="telto:">+38 (098) 278 22 88</a>
           </li>
           <li class="item">
             <img
@@ -115,11 +116,56 @@
             />
             <h3 class="item-title">Simon</h3>
             <p class="description">President of Commerce</p>
-            <a href="mailto:">Simon@gmail.com</a>
-            <a href="telto:">+38 (098) 278 44 00</a>
+            <a class="link" href="mailto:">Simon@gmail.com</a> <br />
+            <a class="link" href="telto:">+38 (098) 278 44 00</a>
           </li>
         </ul>
+        <button class="btn" type="button">Show more</button>
       </div>
     </section>
+    <form action="#" id="form" class="section">
+      <div class="container">
+        <h2 class="title">Working with POST request</h2>
+        <fieldset class="input">
+          <label for="name"></label>
+          <input type="text" name="name" id="name" placeholder="Your name" />
+          <label for="email"></label>
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <input type="phone" name="phone" id="phone" placeholder="Phone" />
+          <label class="phone-number" for="phone"
+            >+38 (XXX) XXX - XX - XX</label
+          >
+        </fieldset>
+        <fieldset class="radio">
+          <legend class="legend">Select your position</legend>
+
+          <div class="wrapper">
+            <input type="radio" name="position" id="position" />
+            <label for="radio">Frontend developer</label>
+          </div>
+
+          <div class="wrapper">
+            <input type="radio" name="position" id="position" />
+            <label for="radio">Backend developer</label>
+          </div>
+
+          <div class="wrapper">
+            <input type="radio" name="position" id="position" />
+            <label for="radio">Designer</label>
+          </div>
+
+          <div class="wrapper">
+            <input type="radio" name="position" id="position" />
+            <label for="radio">QA</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="photo" id="photo-label">
+            Upload
+            <input type="file" name="photo" id="photo" />
+          </label>
+        </fieldset>
+      </div>
+    </form>
   </body>
 </html>
